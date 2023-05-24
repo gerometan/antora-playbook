@@ -15,9 +15,9 @@ Note: Use command 'npm ls -g --depth=0' to list all antora installed packages
 Note: Check gulp by using command 'gulp --tasks-simple'
 
 ### Gulp Commands:
-gulp preview:build - build and preview the GUI bundle
-gulp preview - preview the GUI bundle
-gulp bundle - generate the zip bundle
+- gulp preview:build - build and preview the GUI bundle
+- gulp preview - preview the GUI bundle
+- gulp bundle - generate the zip bundle
 
 
 
