@@ -4,7 +4,7 @@
 ### Setting up Playbook: 
 1) Download and install the latest Node.js from https://nodejs.org/en/download
 2) Install Antora using the command 'npx antora -v'
-3) Install the Antora site generator with command 'npm i -D -E @antora/site-generator@3.1' or if global 'npm i -g @antora/cli@3.1 @antora/site-generator@3.1'
+3) Install the Antora site generator with command 'npm i @antora/lunr-extension'
 4) Use command 'npm ls -g --depth=0' to list all antora installed packages
 
 ### Generating the Site:
