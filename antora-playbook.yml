@@ -4,10 +4,16 @@ site:
 content:
   sources:
   - url: https://github.com/gerometan/ModuleA.git
-    version: '0.4.9'
+    branches: [main]
   - url: https://github.com/gerometan/ModuleB.git
     branches: [main, feature_version]
-    start_path: docs
+    start_path: docs    
+  - url: https://github.com/gerometan/5_16_traefik_latest.git
+    branches: [main]  
+    start_path: app-proxy/launcher/doc  
+  - url: https://github.com/gerometan/5_16_traefik_latest.git
+    branches: [main]  
+    start_path: app-proxy/server-app/doc    
 ui:
   bundle:
     url: https://github.com/gerometan/antora-ui-bundle/raw/main/build/ui-bundle.zip
