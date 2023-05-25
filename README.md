@@ -1,4 +1,3 @@
-# antora-playbook
 ## Antora Playbook POC
 
 ### Setting up Playbook: 
