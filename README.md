@@ -7,7 +7,9 @@
 Note: Use command 'npm ls -g --depth=0' to list all antora installed packages
 
 ### Generating the Site:
-1) type command 'npx antora --fetch antora-playbook.yml'
+1) Type the command 'npx antora --fetch antora-playbook.yml'
+2) Generated site is in '.\build\site' relative to the antora playbook.
+
 
 
 
