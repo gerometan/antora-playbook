@@ -1,25 +1,21 @@
 site:
-  title: Antora Docs For Demo
-  start_page: ModuleA::example.adoc
+  title: Wamas NG Documentation
+  start_page: FrontPage::index.adoc
 content:
   sources:
-  - url: https://github.com/gerometan/ModuleA.git
+  - url: https://github.com/gerometan/frontpage.git
     branches: [main]
-  - url: https://github.com/gerometan/ModuleB.git
-    branches: [main, feature_version]
     start_path: docs    
   - url: https://github.com/gerometan/5_16_traefik_latest.git
     branches: [main]  
     start_path: app-proxy/launcher/doc  
   - url: https://github.com/gerometan/5_16_traefik_latest.git
     branches: [main]  
-    start_path: app-proxy/server-app/doc    
+    start_path: app-proxy/server-app/doc   
 ui:
   bundle:
     url: https://github.com/gerometan/antora-ui-bundle/raw/main/build/ui-bundle.zip
-
+    snapshot: true
 antora:
   extensions:
   - require: '@antora/lunr-extension'
-
-    
