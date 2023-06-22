@@ -1,0 +1,15 @@
+:icons: font
+:stylesheet: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+
+.Navigation
+****
+[[home]]
+== icon:fa-home[] 
+
+[[consul]]
+== icon:fa-info-circle[]
+
+[[traefik]]
+== icon:fa-envelope[]
+****
+

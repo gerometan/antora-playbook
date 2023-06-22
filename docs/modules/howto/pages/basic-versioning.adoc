@@ -1,0 +1,29 @@
+== Versioning
+
+Antora relies on external version control systems and conventions for managing versioning within the documentation source files.
+
+=== Tags
+
+Antora recognizes the tag version indicated in the repository. It is an optional `content.sources` parameter in the playbook that appends the generated pages based on the tag versions
+
+[source]
+----
+content:
+  sources:
+  - url: <module git url>
+    tags: [tag version, ...] 
+----
+
+
+=== Branches
+
+This is an optional `content.sources` parameter in the playbook that appends the generated pages based on the module version from the specified branch.
+
+[source]
+----
+content:
+  sources:
+  - url: <module git url>
+    branches: [branch names, ...] 
+----
+

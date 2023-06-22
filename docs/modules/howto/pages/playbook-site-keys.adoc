@@ -1,0 +1,43 @@
+== Playbook Keys
+Listed are the keys that should be included in an Antora playbook.
+Note: It is recommended to name it as "antora-playbook.yml" to and be placed in \root\doc directory
+
+|===
+|Configuration | Description | Mandatory
+
+|site.title | readable text that references this module and use by UI for static display such as breadcrumbs, header titles, etc.  | yes
+|start_page | home page of the module. It is suggested to be under /ROOT directory and must not reference any version. It can link to other modules, but this is discouraged.  | yes
+|content.sources.url | Refers to the repository of the Antora modules that will be included as content | yes
+|content.sources.branches | List of branches in the repository | yes
+|content.sources.tags | List of tag versions that will be included in the content | no
+|content.sources.start_path | Location of the module's playbook | yes
+|ui.bundle.url | Repository location of the GUI bundle | yes
+|ui.bundle.snapshot | True to include GUI bundle non-production builds | no
+|antora.extensions | Imported Antora plugins | no
+|===
+
+=== Configuration Example
+[source,yaml]
+----
+site:
+  title: Wamas NG Documentation
+  start_page: FrontPage::index.adoc
+content:
+  sources:
+  - url: https://github.com/frontpage/frontpage.git
+    branches: [main]
+    start_path: docs    
+  - url: https://github.com/5_16_traefik/5_16_traefik_latest.git
+    branches: [main]  
+    start_path: app-proxy/launcher/doc  
+  - url: https://github.com/5_16_traefik/5_16_traefik_latest.git
+    branches: [main]  
+    start_path: app-proxy/server-app/doc   
+ui:
+  bundle:
+    url: https://github.com/ui-bundle/antora-ui-bundle/raw/main/build/ui-bundle.zip
+    snapshot: true
+antora:
+  extensions:
+  - require: '@antora/lunr-extension'
+----

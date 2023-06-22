@@ -1,0 +1,16 @@
+== Guidlines in Adding Images in a Module
+
+* images must be saved in /modules/<module name>/images or its subdirectories
+* inclusion of module version is highly advised, to avoid runtime errors
+
+=== Example in Referencing an Image to a Page
+
+[source,yaml]
+----
+'image:<version>@<module name>:<filename>[<optional text>]*'
+----
+
+
+
+
+

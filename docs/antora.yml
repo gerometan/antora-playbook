@@ -1,0 +1,10 @@
+name: FrontPage
+title: Module Contents
+version: 0.3.4
+start_page: index.adoc
+asciidoc:
+  attributes:
+    source-language: asciidoc@
+    table-caption: true
+nav:
+- modules/ROOT/nav.adoc

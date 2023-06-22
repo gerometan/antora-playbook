@@ -1,0 +1,1 @@
+include::ProxyServerApp:ROOT:index.adoc[]

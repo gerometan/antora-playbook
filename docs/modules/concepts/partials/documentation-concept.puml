@@ -1,0 +1,16 @@
+@startwbs
++ Playbook
+ + Module
+  + Version
+  + Components
+   + Pages
+   + Navigations
+   + Cross-Referencing
+   + images
+ + UI Theme
+  + HandleBars
+  + CSS stylesheets
+  + images
+  + Pages
+ + Plugins
+@endwbs

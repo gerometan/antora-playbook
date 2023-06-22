@@ -1,0 +1,26 @@
+== Navigation / Table of Contents
+
+List of from top to 3rd level content of the navigation adoc.
+
+=== File structure
+
+It is recommended that the navigation files should be:
+
+* each module should have 1 navigation file under module/ROOT directory
+* it is optional on other directory
+* must have the filename 'nav.adoc'
+
+=== Levels
+Levels in the adoc structure is signified by '*'
+
+[source,yaml]
+----
+* Top level item
+** Second level item
+*** Third level item
+*** Third level item
+** Second level item
+*** Third level item
+**** Fourth level item
+***** Fifth level item
+----

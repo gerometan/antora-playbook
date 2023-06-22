@@ -1,0 +1,42 @@
+=== Antora General Concepts
+
+[plantuml, bar, svg]
+....
+include::partial$documentation-concept.puml[]
+....
+
+==== Playbook
+The xref:howto:playbook-site-keys.adoc[playbook]  is the central configuration file for an Antora project. It defines the structure, sources, and configuration of your documentation. 
+It specifies the locations of the documentation sources, the layout of the site, and the options for generating the output.
+
+==== Site
+A site in Antora represents the generated documentation website. It consists of pages, navigation menus, and other assets. 
+Antora takes the input from your documentation sources and transforms it into a static site that can be deployed to a web server.
+ 
+==== Component
+A component is a self-contained unit of documentation in Antora. It represents a collection of related documents, such as a guide, a reference manual, or a set of API docs. 
+Components are organized into a hierarchy and can be reused across multiple documentation projects.
+
+==== Module
+A xref:howto:module-site-keys.adoc[module] is a collection of related components in Antora. It allows you to group components together based on their common purpose or theme. For example, you could have a module for user guides, another for API documentation, and so on.
+
+==== Page
+A page is a single document within a component. It can be written in AsciiDoc and may include sections, headings, text, images, code samples, and other elements. xref:howto:including-pages.adoc[Pages] are the building blocks of your documentation. Currently Wamas NG maintains a xref:howto:basic-page.adoc[standard page] that is based on the gui bundle.
+
+==== UI Theme
+Antora provides a theming system that allows you to customize the appearance of your documentation website. You can choose or create a UI theme to define the layout, styling, and behavior of the site. Themes are implemented using Handlebars templates and Sass stylesheets.
+
+==== Versioning
+Antora supports xref:howto:basic-versioning.adoc[versioning] of documentation to manage multiple versions of your content. You can specify different versions for components, allowing users to switch between versions or access version-specific content.
+
+==== Site Navigation
+Antora automatically generates navigation menus based on the structure of your documentation. It creates a xref:howto:navigation.adoc[table of contents], breadcrumbs, and other navigation elements to help users navigate to the site efficiently.
+
+==== Cross-referencing
+Antora supports cross-referencing within and between documents. You can reference other pages or xref:howto:including-images.adoc[resources] using special syntax such as 'links' or 'partial includes'. This allows you to create dynamic and interconnected documentation.
+
+==== Search Plugin
+Antora includes a search functionality that enables users to search for specific content within your documentation. It can be configured to use different search engines or plugins to provide powerful and accurate search results.
+
+==== Diagram Generation Plugin
+An open-source project that provides a service for generating diagrams and visualizations from plain-text descriptions. It supports various diagram types, including UML, flowcharts, sequence diagrams, and more. Kroki allows you to include diagrams in your documentation without manually creating them using specialized software.

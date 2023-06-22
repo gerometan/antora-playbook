@@ -1,0 +1,14 @@
+++++
+include::partial$title.html[]
+++++
+
+[cols="3", frame=none]
+|===
+| +++
+include::partial$card.html[]
++++ | +++
+include::ProxyServerApp:ROOT:partial$card.html[Proxy Server Concepts]
++++ | +++
+include::ProxyServerAppLauncher:ROOT:partial$card.html[Bdeploy Concepts]
++++
+|===

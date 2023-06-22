@@ -1,0 +1,28 @@
+== Module Keys
+Listed are the keys that should be included in an Antora module.
+Note: It is recommended to name it as "antora.yml" and be placed in \root\doc directory
+
+|===
+|Configuration | Description | Mandatory
+
+|name | unique\reference name that other modules can use | yes
+|title | readable text that references this module and use by UI for static display such as breadcrumbs, header titles, etc.  | yes
+|version | refers the latest version of the module. It can be used to reference the module version and can be different with the tagged version  | yes
+|start_page | home page of the module. It is suggested to be under /ROOT directory and must not reference any version. It can link to other modules, but this is discouraged.  | yes
+|asciidoc.attributes.source-language | Defines the expected language for the module. (Ex. Asciidoc) | no
+|nav | table of contents for the module | no
+|===
+
+=== Configuration Example
+[source,yaml]
+----
+name: ServerApp
+title: Server Application
+version: 1.0.9
+start_page: index.adoc
+asciidoc:
+  attributes:
+    source-language: asciidoc@
+nav:
+- modules/ROOT/nav.adoc
+----

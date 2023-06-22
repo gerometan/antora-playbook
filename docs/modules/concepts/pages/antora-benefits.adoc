@@ -1,0 +1,18 @@
+=== Antora Definition
+
+Antora is a documentation site generator that provides a powerful and flexible framework for creating modular and multi-version documentation websites. It is specifically designed to address the challenges faced by complex documentation projects that require a scalable and maintainable approach.
+
+=== Modular Documentation
+Antora allows you to break down your documentation into smaller, reusable components called "modules." This modular approach promotes reusability, consistency, and easier maintenance of documentation content. Modules can be versioned independently, making it convenient to manage documentation for different software versions or branches.
+
+=== Site Generation
+Antora generates static websites from your documentation modules. It provides a customizable build pipeline that processes the documentation content and generates HTML output. The resulting website can be deployed to a web server or served locally for easy access.
+
+=== Multi-Version Documentation
+Antora supports the creation of documentation for multiple versions of your software or project. It enables you to manage versioned documentation side by side and provide version-specific content, while also allowing users to navigate between different versions effortlessly.
+
+=== Customization and Theming
+Antora offers customization options to tailor the appearance and behavior of your documentation site. You can define custom themes, layouts, and styling to match your branding or specific requirements. Antora supports various templating languages, making it flexible to adapt to your preferred tooling and workflow.
+
+=== Collaboration and Contribution
+Antora supports collaborative documentation workflows by enabling multiple authors to work on the documentation simultaneously. It integrates with version control systems like Git, allowing teams to collaborate, review, and merge changes efficiently.

@@ -1,0 +1,10 @@
+[%unstyled]
+|===
+|image:ROOT:consul.svg[alt=Service Registry,width=160,height=120]
+
+|Service Registry Application
+|Install
+|About
+
+|===
+

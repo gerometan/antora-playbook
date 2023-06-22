@@ -1,11 +1,11 @@
 site:
   title: Wamas NG Documentation
-  start_page: FrontPage::index.adoc
+  start_page: index.adoc
 content:
   sources:
-  - url: https://github.com/gerometan/frontpage.git
-    branches: [main]
-    start_path: docs    
+  - url: https://github.com/gerometan/antora-playbook.git
+    branches: [main]  
+    start_path: docs
   - url: https://github.com/gerometan/5_16_traefik_latest.git
     branches: [main]  
     start_path: app-proxy/launcher/doc  
@@ -23,7 +23,7 @@ asciidoc:
   extensions:
     - asciidoctor-kroki
   attributes:
-    kroki-fetch-diagram: true
-    plantuml-server-url: https://plantuml.com/plantuml
+    kroki-fetch-diagram: false
+    kroki-server-url: http://localhost:8000
 
     
