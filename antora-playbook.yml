@@ -1,9 +1,9 @@
 site:
-  title: Wamas NG Documentation
-  start_page: index.adoc
+  title: Wamas NG Documentation POC
+  start_page: FrontPage::index.adoc
 content:
   sources:
-  - url: https://github.com/gerometan/antora-playbook.git
+  - url: .
     branches: [main]  
     start_path: docs
   - url: https://github.com/gerometan/5_16_traefik_latest.git
@@ -23,7 +23,5 @@ asciidoc:
   extensions:
     - asciidoctor-kroki
   attributes:
-    kroki-fetch-diagram: false
+    kroki-fetch-diagram: true
     kroki-server-url: http://localhost:8000
-
-    
